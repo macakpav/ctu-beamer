@@ -1,0 +1,76 @@
+\documentclass[]{beamer}
+\usetheme{CTU}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{ulem}
+\usepackage{siunitx}
+\newcommand\itemS{\item[\textbf{\S}]}
+\usepackage{times} % set font on times new roman
+\usepackage{eurosym} % package for Euro sign
+\usepackage{lineno}   % package for line numbering
+\usepackage{hyperref} % this is for url links
+\usepackage{subcaption}  % this package enables one to put several figures next to each other
+\usepackage{textcomp}
+\usepackage{setspace}
+\usepackage{gensymb}
+
+%----------------------------------
+% Fill in the essential Information
+%----------------------------------
+
+\title[Main title]{Main title of my presentation}
+\subtitle{\ldots a subtitle}
+\author[P.\ Macak]{Pavel Macak} % between [] is short name, between {} is long name
+\date{\today} % Here you can also just type something, e.g. October 10, 2017
+\institute[CTU]{Faculty of Mechanical Engineering\\ Department of Mathematics}
+
+%----------------------------------
+% ACTUAL PRESENTATION STARTS HERE
+%----------------------------------
+
+\begin{document}
+	
+	% TITEL PAGE	
+	{
+		\setbeamertemplate{headline}{} %define local, empty header for title page
+		\setbeamertemplate{footline}{} %define local, empty footer for title page
+		\maketitle
+	}
+	\addtocounter{framenumber}{-1} % We don't count the title page
+	
+	\begin{frame}{Contents}
+		\tableofcontents
+	\end{frame}
+	
+	% SECTION 1
+	\section{Section 1}
+	% FRAME 1 
+	\begin{frame}{Frame 1}
+		\begin{itemize}
+			\item some text
+			
+		\end{itemize}
+		\begin{ctublock}{Landslide}
+			A landslide is the downhill movement of soil mass
+		\end{ctublock}
+	\end{frame}
+	
+	% FRAME 2
+	\begin{frame}{A figure}
+		\centering
+		\includegraphics[width=2cm]{files/logo_ctu.pdf}
+	\end{frame}
+	
+	% FRAME 3
+	\begin{frame}{A table}
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline
+			\bf X & \bf Y \\ \hline
+			x & y \\ \hline 
+		\end{tabular}
+	\end{frame}
+	
+	
+\end{document}
